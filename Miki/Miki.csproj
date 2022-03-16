@@ -10,9 +10,12 @@
     <DebugType>none</DebugType>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Glenn Alon</Authors>
     <Copyright>Copyright (c) 2022 Glenn Alon</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/glenn216/Miki</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>

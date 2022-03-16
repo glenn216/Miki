@@ -68,6 +68,10 @@ namespace Miki
                     result = (m2 * v1) / m1; // (m2 * v1) / m1
                     textBox1.Text = decimal.Round((decimal)result, 2).ToString("0.00") + " mL";
                     break;
+                default:
+                    MessageBox.Show("Choose a valid unknown.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    comboBox1.Focus();
+                    break;
             }
         }
 

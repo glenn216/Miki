@@ -38,7 +38,7 @@ namespace Miki
                 Console.Clear();
                 Console.WriteLine("Enter the number associated with the option you've chosen.");
                 Console.WriteLine("=========================================================================");
-                Console.WriteLine("[1] Dilution Solution");
+                Console.WriteLine("[1] Solution Dilution");
                 Console.WriteLine("[2] Exit");
                 Console.WriteLine("=========================================================================");
                 Console.Write("Input: ");
@@ -50,12 +50,11 @@ namespace Miki
                     case 2:
                         Environment.Exit(0);
                         break;
+                    default:
+                        Console.WriteLine("Option is not valid. Please try once again.");
+                        break;
                 }
             } while (true);
-            
-            //System.Threading.Thread.Sleep(-1);
-            //ApplicationConfiguration.Initialize();
-            //Application.Run(new DilutionMainForm());
         }
     }
 }

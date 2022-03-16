@@ -284,7 +284,7 @@ namespace Miki
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "DilutionMainForm";
-            this.Text = "Dilution Solution";
+            this.Text = "Solution Dilution";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
