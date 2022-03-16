@@ -1,0 +1,2 @@
+# Miki
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0f05594e655346b5b85073fb0312b4b2)](https://app.codacy.com/gh/glenn216/Miki?utm_source=github.com&utm_medium=referral&utm_content=glenn216/Miki&utm_campaign=Badge_Grade_Settings)
