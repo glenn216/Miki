@@ -91,5 +91,32 @@ namespace Miki
                     return 0;
             }
         }
+        private static void ValidateNumber(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) || ((e.KeyChar == '.') && (((TextBox)sender).Text.IndexOf('.') > -1)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void InitialConcentrationTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateNumber(sender, e);
+        }
+
+        private void InitialVolumeTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateNumber(sender, e);
+        }
+
+        private void FinalConcentrationTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateNumber(sender, e);
+        }
+
+        private void FinalVolumeTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateNumber(sender, e);
+        }
     }
 }

@@ -106,6 +106,7 @@ namespace Miki
             this.InitialConcentrationTxt.Name = "InitialConcentrationTxt";
             this.InitialConcentrationTxt.Size = new System.Drawing.Size(166, 26);
             this.InitialConcentrationTxt.TabIndex = 0;
+            this.InitialConcentrationTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InitialConcentrationTxt_KeyPress);
             // 
             // groupBox2
             // 
@@ -140,6 +141,7 @@ namespace Miki
             this.InitialVolumeTxt.Name = "InitialVolumeTxt";
             this.InitialVolumeTxt.Size = new System.Drawing.Size(166, 26);
             this.InitialVolumeTxt.TabIndex = 0;
+            this.InitialVolumeTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InitialVolumeTxt_KeyPress);
             // 
             // groupBox3
             // 
@@ -174,6 +176,7 @@ namespace Miki
             this.FinalVolumeTxt.Name = "FinalVolumeTxt";
             this.FinalVolumeTxt.Size = new System.Drawing.Size(166, 26);
             this.FinalVolumeTxt.TabIndex = 0;
+            this.FinalVolumeTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FinalVolumeTxt_KeyPress);
             // 
             // groupBox4
             // 
@@ -207,6 +210,7 @@ namespace Miki
             this.FinalConcentrationTxt.Name = "FinalConcentrationTxt";
             this.FinalConcentrationTxt.Size = new System.Drawing.Size(166, 26);
             this.FinalConcentrationTxt.TabIndex = 0;
+            this.FinalConcentrationTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FinalConcentrationTxt_KeyPress);
             // 
             // groupBox5
             // 
