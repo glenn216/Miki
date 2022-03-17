@@ -27,11 +27,11 @@ namespace Miki
         public DilutionMainForm()
         {
             InitializeComponent();
-            this.Focus();
             InitialConcentrationCbox.Text += "M";
             InitialVolumeCbox.Text += "mL";
             FinalConcentrationCbox.Text += "M";
             FinalVolumeCbox.Text += "mL";
+            this.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
