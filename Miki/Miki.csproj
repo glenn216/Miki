@@ -10,7 +10,7 @@
     <DebugType>none</DebugType>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
     <Authors>Glenn Alon</Authors>
     <Copyright>Copyright (c) 2022 Glenn Alon</Copyright>
     <PackageProjectUrl></PackageProjectUrl>

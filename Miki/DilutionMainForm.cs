@@ -27,6 +27,7 @@ namespace Miki
         public DilutionMainForm()
         {
             InitializeComponent();
+            this.Focus();
             InitialConcentrationCbox.Text += "M";
             InitialVolumeCbox.Text += "mL";
             FinalConcentrationCbox.Text += "M";
@@ -53,7 +54,7 @@ namespace Miki
             switch (comboBox1.SelectedItem)
             {
                 case "M1":
-                    result = (m2 * v1) / v2; // (m2 * v1) / v2
+                    result = (m2 * v2) / v1; // (m2 * v2) / v1
                     textBox1.Text = decimal.Round((decimal)result, 2).ToString("0.00") + " M";
                     break;
                 case "M2":
@@ -65,7 +66,7 @@ namespace Miki
                     textBox1.Text = decimal.Round((decimal)result, 2).ToString("0.00") + " mL";
                     break;
                 case "V2":
-                    result = (m2 * v1) / m1; // (m2 * v1) / m1
+                    result = (m1 * v1) / m2; // (m1 * v1) / m2 
                     textBox1.Text = decimal.Round((decimal)result, 2).ToString("0.00") + " mL";
                     break;
                 default:
