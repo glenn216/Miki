@@ -55,7 +55,7 @@ namespace Miki
             float T = ParseFloat(MagneticFieldTxt.Text);
             float angle = ParseFloat(AngleTxt.Text);
             float area = ParseFloat(AreaTxt.Text);
-            float result = (float)((T * area) * Math.Cos(angle));
+            float result = (float)((T * area) * MathF.Cos(angle * (MathF.PI/180.0F)));
             ResultsTxt.Text = decimal.Round((decimal)result, 2).ToString("0.00") + @" 𝑾𝒃";
         }
     }
