@@ -39,15 +39,19 @@ namespace Miki
                 Console.WriteLine("Enter the number associated with the option you've chosen.");
                 Console.WriteLine("=========================================================================");
                 Console.WriteLine("[1] Solution Dilution");
-                Console.WriteLine("[2] Exit");
+                Console.WriteLine("[2] Magnetic Flux");
+                Console.WriteLine("[3] Exit");
                 Console.WriteLine("=========================================================================");
                 Console.Write("Input: ");
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
-                        Application.Run(new DilutionMainForm());
+                        _ = AsyncRun(new SolutionDilutionForm());
                         break;
                     case 2:
+                        _ = AsyncRun(new MagneticFluxForm());
+                        break;
+                    case 3:
                         Environment.Exit(0);
                         break;
                     default:
@@ -56,5 +60,7 @@ namespace Miki
                 }
             } while (true);
         }
+
+        private static async Task AsyncRun(Form e) => await Task.Run(() => Application.Run(e));
     }
 }

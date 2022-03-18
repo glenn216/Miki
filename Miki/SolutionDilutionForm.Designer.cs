@@ -22,7 +22,7 @@
 
 namespace Miki
 {
-    partial class DilutionMainForm
+    partial class SolutionDilutionForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -63,10 +63,10 @@ namespace Miki
             this.FinalConcentrationCbox = new System.Windows.Forms.ComboBox();
             this.FinalConcentrationTxt = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ResultsTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CalculateBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -89,18 +89,20 @@ namespace Miki
             // 
             // InitialConcentrationCbox
             // 
+            this.InitialConcentrationCbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.InitialConcentrationCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.InitialConcentrationCbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InitialConcentrationCbox.FormattingEnabled = true;
             this.InitialConcentrationCbox.Items.AddRange(new object[] {
             "M"});
-            this.InitialConcentrationCbox.Location = new System.Drawing.Point(178, 24);
+            this.InitialConcentrationCbox.Location = new System.Drawing.Point(178, 25);
             this.InitialConcentrationCbox.Name = "InitialConcentrationCbox";
             this.InitialConcentrationCbox.Size = new System.Drawing.Size(67, 26);
             this.InitialConcentrationCbox.TabIndex = 1;
             // 
             // InitialConcentrationTxt
             // 
+            this.InitialConcentrationTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.InitialConcentrationTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InitialConcentrationTxt.Location = new System.Drawing.Point(6, 25);
             this.InitialConcentrationTxt.Name = "InitialConcentrationTxt";
@@ -123,6 +125,7 @@ namespace Miki
             // 
             // InitialVolumeCbox
             // 
+            this.InitialVolumeCbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.InitialVolumeCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.InitialVolumeCbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InitialVolumeCbox.FormattingEnabled = true;
@@ -136,6 +139,7 @@ namespace Miki
             // 
             // InitialVolumeTxt
             // 
+            this.InitialVolumeTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.InitialVolumeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InitialVolumeTxt.Location = new System.Drawing.Point(6, 25);
             this.InitialVolumeTxt.Name = "InitialVolumeTxt";
@@ -158,6 +162,7 @@ namespace Miki
             // 
             // FinalVolumeCbox
             // 
+            this.FinalVolumeCbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FinalVolumeCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FinalVolumeCbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FinalVolumeCbox.FormattingEnabled = true;
@@ -171,6 +176,7 @@ namespace Miki
             // 
             // FinalVolumeTxt
             // 
+            this.FinalVolumeTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FinalVolumeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FinalVolumeTxt.Location = new System.Drawing.Point(6, 25);
             this.FinalVolumeTxt.Name = "FinalVolumeTxt";
@@ -193,6 +199,7 @@ namespace Miki
             // 
             // FinalConcentrationCbox
             // 
+            this.FinalConcentrationCbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FinalConcentrationCbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FinalConcentrationCbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FinalConcentrationCbox.FormattingEnabled = true;
@@ -205,6 +212,7 @@ namespace Miki
             // 
             // FinalConcentrationTxt
             // 
+            this.FinalConcentrationTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FinalConcentrationTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FinalConcentrationTxt.Location = new System.Drawing.Point(6, 25);
             this.FinalConcentrationTxt.Name = "FinalConcentrationTxt";
@@ -214,7 +222,7 @@ namespace Miki
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.ResultsTxt);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(9, 372);
@@ -224,16 +232,17 @@ namespace Miki
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Results";
             // 
-            // textBox1
+            // ResultsTxt
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.ResultsTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(6, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(238, 26);
-            this.textBox1.TabIndex = 0;
+            this.ResultsTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ResultsTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ResultsTxt.Location = new System.Drawing.Point(6, 26);
+            this.ResultsTxt.Name = "ResultsTxt";
+            this.ResultsTxt.ReadOnly = true;
+            this.ResultsTxt.Size = new System.Drawing.Size(238, 26);
+            this.ResultsTxt.TabIndex = 0;
             // 
             // label1
             // 
@@ -247,6 +256,7 @@ namespace Miki
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
@@ -260,24 +270,26 @@ namespace Miki
             this.comboBox1.Size = new System.Drawing.Size(67, 23);
             this.comboBox1.TabIndex = 7;
             // 
-            // button1
+            // CalculateBtn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(166, 316);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CalculateBtn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.CalculateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalculateBtn.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CalculateBtn.Location = new System.Drawing.Point(166, 316);
+            this.CalculateBtn.Name = "CalculateBtn";
+            this.CalculateBtn.Size = new System.Drawing.Size(75, 29);
+            this.CalculateBtn.TabIndex = 8;
+            this.CalculateBtn.Text = "Calculate";
+            this.CalculateBtn.UseVisualStyleBackColor = false;
+            this.CalculateBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // DilutionMainForm
+            // SolutionDilutionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(278, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CalculateBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox5);
@@ -287,8 +299,9 @@ namespace Miki
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "DilutionMainForm";
+            this.Name = "SolutionDilutionForm";
             this.Text = "Solution Dilution";
+            this.Load += new System.EventHandler(this.SolutionDilutionForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -319,9 +332,9 @@ namespace Miki
         private ComboBox FinalConcentrationCbox;
         private TextBox FinalConcentrationTxt;
         private GroupBox groupBox5;
-        private TextBox textBox1;
+        private TextBox ResultsTxt;
         private Label label1;
         private ComboBox comboBox1;
-        private Button button1;
+        private Button CalculateBtn;
     }
 }
