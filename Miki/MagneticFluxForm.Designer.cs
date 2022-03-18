@@ -224,8 +224,10 @@ namespace Miki
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MagneticFluxForm";
-            this.Text = "MagneticFlux";
+            this.Text = "Magnetic Flux";
             this.Load += new System.EventHandler(this.MagneticFluxForm_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

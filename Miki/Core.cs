@@ -22,7 +22,7 @@
 
 namespace Miki
 {
-    internal class Core
+    internal static class Core
     {
         internal static double ParseDouble(string x)
         {
@@ -53,15 +53,16 @@ namespace Miki
         {
             switch (e.KeyChar)
             {
-                case (char)'-':
-                    textBox.Text += "-";
+                case '-':
+                    _ = textBox.Text + "-";
                     textBox.SelectionStart = textBox.Text.Length;
                     break;
-            }
-
-            if ((!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) || ((e.KeyChar == '.') && (((TextBox)sender).Text.IndexOf('.') > -1)) || ((e.KeyChar == '-') && (((TextBox)sender).Text.IndexOf('.') > -1)))
-            {
-                e.Handled = true;
+                default:
+                    if ((!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) || ((e.KeyChar == '.') && (((TextBox)sender).Text.IndexOf('.') > -1)) || ((e.KeyChar == '-') && (((TextBox)sender).Text.IndexOf('.') > -1)))
+                    {
+                        e.Handled = true;
+                    }
+                    break;
             }
         }
     }
